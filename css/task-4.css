@@ -1,0 +1,29 @@
+.login-form {
+  display: flex;
+  flex-direction: column; /* Задает направление элементов в колонку */
+  align-items: left; /* Выравнивает элементы по центру по горизонтали */
+  width: 360px; /* Задает ширину формы */
+  padding: 20px; /* Отступы внутри формы */
+}
+
+.login-form label {
+  width: 100%; /* Задает ширину метки равной ширине формы */
+  margin-bottom: 10px; /* Отступ снизу для каждой метки */
+}
+
+.login-form input {
+  width: 100%; /* Задает ширину поля ввода равной ширине формы */
+  padding: 8px; /* Паддинг для поля ввода */
+  margin-top: 4px; /* Отступ сверху для поля ввода */
+}
+
+.login-form button {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 86px;
+  height: 40px;
+  background: #4e75ff;
+  border: none;
+  color: white;
+  margin-top: 20px;
+}
