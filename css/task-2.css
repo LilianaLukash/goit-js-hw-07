@@ -1,0 +1,24 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+  list-style: none;
+
+  padding-left: 156px;
+  padding-right: 156px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.gallery li {
+  /* flex: 0 1 calc((100% - 2 * 156px) / 3); */
+  width: calc((100% - 2 * 156px - 2 * 24px) / 3);
+}
+.gallery img {
+  display: block;
+  height: 100%;
+
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
