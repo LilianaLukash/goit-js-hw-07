@@ -12,7 +12,7 @@
 }
 .gallery li {
   /* flex: 0 1 calc((100% - 2 * 156px) / 3); */
-  width: calc((100% - 2 * 156px - 2 * 24px) / 3);
+  width: calc((100% - 2 * 24px) / 3);
 }
 .gallery img {
   display: block;
