@@ -11,7 +11,7 @@ function getRandomHexColor() {
   createButton.addEventListener('click', function() {
     const numBoxes = parseInt(input.value);
     if (numBoxes >= 1 && numBoxes <= 100) {
-      createBoxes(numBoxes);
+    createBoxes(numBoxes);
     }
     input.value = '';
   });
@@ -28,11 +28,11 @@ function createBoxes(amount) {
     let color = 0
 
   for (let i = 0; i < amount; i++) {
-    const box = document.createElement('div');
+    
     size = `${initialSize + i * 10}px`;
     color = getRandomHexColor();
      
-    allBoxes.push = `<div style="width: ${size}px; height: ${size}px; background-color: ${color};"></div>`
+      allBoxes.push(`<div style="width: ${size}; height: ${size}; background-color: ${color};"></div>`);
 
     
     }
