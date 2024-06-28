@@ -21,16 +21,22 @@ function getRandomHexColor() {
 
 function createBoxes(amount) {
   destroyBoxes(); // Очищаємо попередні квадрати перед створенням нових
-  const boxesContainer = document.getElementById('boxes');
-  let initialSize = 30;
+    const boxesContainer = document.getElementById('boxes');
+    let allBoxes = [];
+    let initialSize = 30;
+    let size = 0
+    let color = 0
 
   for (let i = 0; i < amount; i++) {
     const box = document.createElement('div');
-    box.style.width = `${initialSize + i * 10}px`;
-    box.style.height = `${initialSize + i * 10}px`;
-    box.style.backgroundColor = getRandomHexColor();
-    boxesContainer.appendChild(box);
-  }
+    size = `${initialSize + i * 10}px`;
+    color = getRandomHexColor();
+     
+    allBoxes.push = `<div style="width: ${size}px; height: ${size}px; background-color: ${color};"></div>`
+
+    
+    }
+    boxesContainer.innerHTML = allBoxes.join(' ');
 }
 
 function destroyBoxes() {
